@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: helvetica;
+}
+nav{
+    background: skyblue;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+a.active,a:hover{
+    background: blue;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; 
+}
+#check{
+   display: none; 
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: blue
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background: url(https://media.istockphoto.com/photos/cleaning-lady-with-a-bucket-and-cleaning-products-picture-id870219332?k=20&m=870219332&s=612x612&w=0&h=ZMFvkK0-VtGFja446L0-xy1OJSh6_1vCAgpmfmnzYTg=) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+
+
+
+/* @media (min-width: 768px) {
+  .nav-links {
+    display: block;
+  }
+
+  .toogle {
+    display: none;
+  }
+
+  .intro {
+    background-image: url("./images/header-bg-desktop.png");
+    background-repeat: no-repeat;
+  }
+
+  .intro-paragraph {
+    margin-left: 250px;
+    margin-top: 70px;
+  }
+
+  .social-media-btn {
+    margin-left: 250px;
+  }
+
+  .logo h3 {
+    margin-left: 150px;
+  }
+
+  #portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    margin-left: 230px;
+    column-gap: 50px;
+  }
+
+  .placeholder-img1 {
+    background-image: url("./images/desktop 1.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 100%;
+    height: 448px;
+  }
+  .placeholder-img2 {
+    background-image: url("./images/desktop 2.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 100%;
+    height: 448px;
+  }
+  .placeholder-img3 {
+    background-image: url("./images/desktop 3.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 100%;
+    height: 448px;
+  }
+  .placeholder-img4 {
+    background-image: url("./images/desktop 4.png");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 100%;
+    height: 448px;
+  }
+
+  .card {
+    width: 1156px;
+    height: 496px;
+  }
+
+  .one {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 1 / 2;
+  }
+
+  .two {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-row: 2 / 3;
+  }
+
+  .three {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-row: 3 / 4;
+  }
+
+  .four {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-row: 4 / 5;
+  }
+} */

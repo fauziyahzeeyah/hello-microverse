@@ -1,0 +1,31 @@
+body{
+    background-color:darkblue;
+}
+h1{
+    color: white;
+    font-family: helvetica;
+    font-size: 36px;
+    font-weight: bold;
+}
+p{
+    color: white;
+    font-family: helvetica;
+}
+button{
+    color: white;
+    width: 90px;
+    height: 50px;
+    background-color: blue;
+    cursor: pointer;
+    border: 2px solid white;
+}
+button:hover{
+    color: blue;
+    background: white;
+}
+h4{
+    color: white;
+    font-family: helvetica;
+    font-size: 30px;
+    font-weight: bold;
+}

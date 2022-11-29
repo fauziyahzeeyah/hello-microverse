@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 745px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2{
+    font-size: 36px;
+    font-family: Helvetica;
+    color: white;
+}
+</style>
+        <title>my 1st js project</title>
+        <link href="CSS\Style.css" rel="stylesheet"> 
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML="You can also call me ZEEYAH";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column" style="background-color:skyblue;">
+        
+                <h1>What Can Javascript Do?</h1>
+                <h4 id="demo">Javascript can change HTML content? Let's try it out.</h4>
+                <button type="button" onclick='document.getElementById("demo").innerHTML="My name is Bashiru Fauziyah"'>Click Me</button>
+                <br><br>
+                <h4>Javascript can change HTML attribute values</h4>
+                <p>Javascript can switch on and switch off a bulb in HTML, let's try it out again.</p>
+                <button type="button" onclick="document.getElementById('myImage').src='https://i.gifer.com/origin/46/46ec54edb5e0c68fc5fc7eaf236574a5_w200.gif'">Turn on the light</button>
+                <img id="myImage" src="https://4.imimg.com/data4/DH/JY/MY-14278989/25w-cfl-bulb-500x500.jpg" style="width: 100px">
+                <button type="button" onclick="document.getElementById('myImage').src='https://4.imimg.com/data4/DH/JY/MY-14278989/25w-cfl-bulb-500x500.jpg'">Turn off the light</button>
+                <h4>Javascript can hide elements</h4>
+                <p id="demo">click the below button to hide and reveal the first Javascript</p>
+                <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me to hide!</button>
+                <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me to reveal! </button>
+                <br><br>
+            </div>
+            <div class="column" style="background-color:blue;">
+                <h2>Demo Javascript in HEAD</h2>
+                <p id="demo">Look left while you clik the button</p>
+                <button type="button" onclick="myFunction()" style="background-color:skyblue;">Try it!</button>
+                <h2>Demo Javascript in BODY</h2>
+                <p id="demo">Look left while you click the button </p>
+                <button type="button" onclick="myFunction()" style="background-color:skyblue;">Try it!</button>
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").innerHTML="My native names are OYIZA and OZIOHU";
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
