@@ -36,7 +36,7 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[hello-microverse]** is a simple project sayin hello to Microverse
+**[hello-microverse]** is a simple project saying hello to Microverse
 
 ## 🛠 Built With <a name="built-with"></a>
    - HTML & CSS
